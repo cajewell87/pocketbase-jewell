@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: pocketbase-jewell
+    env: docker
+    dockerfilePath: ./Dockerfile
+    disk:
+      name: pb-data
+      mountPath: /pb/pb_data
+      sizeGB: 1
